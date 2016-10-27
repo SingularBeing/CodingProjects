@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Animations
+{
+    [System.Serializable]
+    public class CAnimation
+    {
+        public string Name;
+        public List<Sprite> Frames;
+
+        /*
+            Main Constructor
+        */
+        public CAnimation()
+        {
+            Name = string.Empty;
+            Frames = new List<Sprite>();
+        }
+
+        /*
+            Main Constructor
+        */
+        public CAnimation(string Name, List<Sprite> Frames)
+        {
+            this.Name = Name;
+            this.Frames = Frames;
+        }
+    }
+}
